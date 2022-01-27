@@ -10,7 +10,7 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 From top to bottom: "SimSpringfield2000", Three pictures in a row, 3 selections in a row underneath them, Slogan and input box, the slogans generated underneath all of them.
 1) **Once you have a drawing, name the HTML elements you'll need to realize your vision**
 h1 for simpspringfirled
-h3 for choose your landmarks
+h3 for "choose your landmarks"
 a section for pictures with divs for each
 a section for selections with divs for each
 h4 for "wow what a nice springfield, what are it's citizens saying? Let's listen"
