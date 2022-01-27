@@ -16,7 +16,9 @@ const sayingsInput = document.getElementById('sayings-input');
 const sayingsButton = document.getElementById('sayings-button');
 // let state
 
-// set event listeners 
+const sayings = [];
+
+// set event listeners <<<<<<<<<<<<<<BOOKMARK!
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
