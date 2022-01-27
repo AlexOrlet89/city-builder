@@ -2,7 +2,7 @@
 body {
     /* feel free to update these css variables for a quick theme */
     
-    --color1: white;
+    --color1: rgb(219, 13, 13);
     --color2: white;
     --color3: white;
     --color4: white;
@@ -30,8 +30,46 @@ body {
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
 }
+* {
+    border: black 3px solid;
+}
 
-main {
+.Image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    margin: 10px 10px 10px 10px;
+    border: black 3px solid;
+
+    
+}
+.Images-Section {
+    margin: 10px 10px 10px 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: black 3px solid;
+
+}
+
+.Places-Section {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1.5fr 1fr 1fr;
+    height: 700px;
+    width: 200px;
+}
+
+.main-section {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
