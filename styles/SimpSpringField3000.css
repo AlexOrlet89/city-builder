@@ -1,0 +1,77 @@
+body {
+    /* feel free to update these css variables for a quick theme */
+    
+    --color1: rgb(189, 158, 19);
+    --color2: rgb(135, 183, 223);
+    --color3: rgb(223, 217, 217);
+    --color4: rgb(224, 90, 86);
+    --color5: rgb(29, 14, 14);
+    
+    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
+        
+    /* --color1: hsla(349, 69%, 76%, 1);
+    --color2: hsla(207, 67%, 44%, 1);
+    --color3: hsla(200, 61%, 56%, 1);
+    --color4: hsla(187, 41%, 94%, 1);
+    --color5: hsla(170, 28%, 95%, 1); */
+
+    /* --color1: hsla(45, 86%, 83%, 1);
+    --color2: hsla(135, 65%, 98%, 1);
+    --color3: hsla(315, 37%, 86%, 1);
+    --color4: hsla(45, 73%, 98%, 1);
+    --color5: hsla(224, 40%, 79%, 1); */
+    
+    --header-height: 80px;
+    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
+    --gutter: 30px;
+    --footer-height: 25px;
+    
+    font-family: 'Titillium Web', sans-serif;
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    /* SimpSpringfield header */
+    text-align: center;
+}
+
+h3 {
+    /* Choose your landmarks */
+    text-align: center;
+}
+
+.Places-Section {
+    /* this ended up being everything that isn't the header sections */
+    border: var(--color5) 3px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+    width: 900px;
+    padding: 10px 10px 10px 10px;
+}
+
+.Images-Section {
+    border: var(--color5) 3px solid;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    /* margin: 10px 10px 10px 10px; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Image {
+    display: flex;
+    flex-direction: row;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
