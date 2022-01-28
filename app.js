@@ -28,9 +28,27 @@ landmarksSelection.addEventListener('change', () => {
     // console.log(value);
     landmarksCount++;
     landmarksImg.style.backgroundImage = `url("./assets/Landmarks/${value}.png")`;
+    // update DOM to reflect the new state
+
+});
+
+restaurantsSelection.addEventListener('change', () => {
+    const value = restaurantsSelection.value;
+    // console.log(value);
+    restaurantsCount++;
+    restaurantsImg.style.backgroundImage = `url("./assets/restaurants/${value}.png")`;
+    // update DOM to reflect the new state
+
+});
+
+shoppingSelection.addEventListener('change', () => {
+    const value = shoppingSelection.value;
+    // console.log(value);
+    shoppingCount++;
+    shoppingImg.style.backgroundImage = `url("./assets/shopping/${value}.png")`;
+    // update DOM to reflect the new state
 
 });
 
   // get user input
   // use user input to update state 
-  // update DOM to reflect the new state
