@@ -58,7 +58,7 @@ shoppingSelection.addEventListener('change', () => {
 });
 
 function displayStats() {
-    reportEl.textContent = `You've selected ${landmarksCount} landmarks, ${restaurantsCount} restaurants, and ${shoppingCount}.`;
+    reportEl.textContent = `You've selected ${landmarksCount} landmarks, ${restaurantsCount} restaurants, and ${shoppingCount} place.`;
     console.log(displayStats);
 }
 // displayStats();
@@ -76,7 +76,7 @@ sayingsButton.addEventListener('click', () => {
 function displaySayings() {
 
     sayingsSection.textContent = '';
-    
+
     for (let saying of sayings) {
     
         const sayingsList = document.createElement('p');
