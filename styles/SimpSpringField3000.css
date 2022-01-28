@@ -1,3 +1,8 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
 body {
     /* feel free to update these css variables for a quick theme */
     
@@ -43,6 +48,15 @@ h3 {
     text-align: center;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .Places-Section {
     /* this ended up being everything that isn't the header sections */
     border: var(--color5) 3px solid;
@@ -50,28 +64,58 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 300px;
-    width: 900px;
+    height: 100%;
+    width: 100%;
     padding: 10px 10px 10px 10px;
 }
 
-.Images-Section {
+/* .Images-Section {
     border: var(--color5) 3px solid;
     display: flex;
     flex-direction: row;
     height: 100%;
     width: 100%;
-    /* margin: 10px 10px 10px 10px; */
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-}
+} */
 
+
+/* selection section label and select hxw at 100% */
 .Image {
-    display: flex;
-    flex-direction: row;
+    height: 80%;
+    width: 80%;
+    /* height: 200px;
+    width: 200px; */
     background-size: contain;
-    height: 100%;
-    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    border: var(--color3) 3px solid;
+}
+
+.Selection-Section {
+    display: flex;
+    flex-direction: row;
+    /* width: fit-content; */
+    height: 450px;
+    width: 100%;
+    /* margin: 10px 10px 10px 10px; */
+    align-content: space-evenly;
+    align-items: space-evenly;
+}
+.Selection-Section div {
+    display: flex;
+    flex-direction: column;
+    border: var(--color5) 3px solid;
+    /* width: fit-content; */
+    height: 100%;
+    width: 100%;
+    /* padding: 10px 10px 10px 10px; */
+    /* align-content: space-evenly; */
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+label {
+    border: var(--color5) 3px solid;
+    height: 10%;
 }
