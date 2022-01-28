@@ -16,12 +16,14 @@ const sayingsInput = document.getElementById('sayings-input');
 const sayingsButton = document.getElementById('sayings-button');
 // let state
 
+const reportEl = document.getElementById('report');
+
 let restaurantsCount = 0;
 let landmarksCount = 0;
 let shoppingCount = 0;
 const sayings = [];
 
-// set event listeners <<<<<<<<<<<<<<BOOKMARK!
+// set event listeners 
 
 landmarksSelection.addEventListener('change', () => {
     const value = landmarksSelection.value;
@@ -29,7 +31,7 @@ landmarksSelection.addEventListener('change', () => {
     landmarksCount++;
     landmarksImg.style.backgroundImage = `url("./assets/Landmarks/${value}.png")`;
     // update DOM to reflect the new state
-
+    console.log(landmarksCount);
 });
 
 restaurantsSelection.addEventListener('change', () => {
@@ -38,6 +40,7 @@ restaurantsSelection.addEventListener('change', () => {
     restaurantsCount++;
     restaurantsImg.style.backgroundImage = `url("./assets/restaurants/${value}.png")`;
     // update DOM to reflect the new state
+    console.log(restaurantsCount);
 
 });
 
@@ -47,8 +50,14 @@ shoppingSelection.addEventListener('change', () => {
     shoppingCount++;
     shoppingImg.style.backgroundImage = `url("./assets/shopping/${value}.png")`;
     // update DOM to reflect the new state
+    console.log(shoppingCount);
 
 });
 
+function displayStats() {
+    reportEl.textContent = `${landmarksCount} landmarks, ${restaurantsCount} restaurants, ${shoppingCount} shopping.`;
+    console.log(displayStats);
+}
+displayStats();
   // get user input
   // use user input to update state 

@@ -44,9 +44,12 @@ body {
     height: 100%;
     margin: 10px 10px 10px 10px;
     border: black 3px solid;
-
-    
 }
+
+.Selection-Section{
+    border:rgb(111, 109, 224) 3 px solid;
+}
+
 .Images-Section {
     margin: 10px 10px 10px 10px;
     width: 100%;
