@@ -34,7 +34,7 @@ landmarksSelection.addEventListener('change', () => {
     landmarksCount++;
     landmarksImg.style.backgroundImage = `url("./assets/Landmarks/${value}.png")`;
     // update DOM to reflect the new state
-    console.log(landmarksCount);
+    // console.log(landmarksCount);
     displayStats();
 });
 
@@ -44,7 +44,7 @@ restaurantsSelection.addEventListener('change', () => {
     restaurantsCount++;
     restaurantsImg.style.backgroundImage = `url("./assets/restaurants/${value}.png")`;
     // update DOM to reflect the new state
-    console.log(restaurantsCount);
+    // console.log(restaurantsCount);
     displayStats();
 
 });
@@ -55,7 +55,7 @@ shoppingSelection.addEventListener('change', () => {
     shoppingCount++;
     shoppingImg.style.backgroundImage = `url("./assets/shopping/${value}.png")`;
     // update DOM to reflect the new state
-    console.log(shoppingCount);
+    // console.log(shoppingCount);
     displayStats();
 
 });
@@ -65,7 +65,7 @@ function displayStats() {
     const stats = createStatsString(landmarksCount, restaurantsCount, shoppingCount);
 
     reportEl.textContent = stats;
-    console.log(displayStats);
+    // console.log(displayStats);
 }
 
 
@@ -75,7 +75,7 @@ sayingsButton.addEventListener('click', () => {
     sayings.push(value);
 
     sayingsInput.value = '';
-    console.log(sayings);
+    // console.log(sayings);
     displaySayings();
 });
 
