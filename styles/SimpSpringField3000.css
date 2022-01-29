@@ -102,10 +102,11 @@ main {
     flex-direction: row;
     /* width: fit-content; */
     height: 450px;
-    width: 100%;
+    width: 95%;
     /* margin: 10px 10px 10px 10px; */
     align-content: space-evenly;
     align-items: space-evenly;
+    justify-content: center;
 }
 .Selection-Section div {
     display: flex;
@@ -127,5 +128,6 @@ label {
 }
 
 .Sayings-Section {
+    text-align: center;
     margin-bottom: 15%;
 }

@@ -1,4 +1,5 @@
 // import functions and grab DOM elements
+import { createStatsString } from './createstatstring.js';
 
 //Selector Elements
 const landmarksSelection = document.getElementById('Landmarks-Selection');
@@ -24,6 +25,8 @@ let shoppingCount = 0;
 const sayings = [];
 
 // set event listeners 
+
+// displayStats();
 
 landmarksSelection.addEventListener('change', () => {
     const value = landmarksSelection.value;
@@ -58,10 +61,13 @@ shoppingSelection.addEventListener('change', () => {
 });
 
 function displayStats() {
-    reportEl.textContent = `You've selected ${landmarksCount} landmarks, ${restaurantsCount} restaurants, and ${shoppingCount} place.`;
+
+    const stats = createStatsString(landmarksCount, restaurantsCount, shoppingCount);
+
+    reportEl.textContent = stats;
     console.log(displayStats);
 }
-// displayStats();
+
 
 sayingsButton.addEventListener('click', () => {
     const value = sayingsInput.value;
